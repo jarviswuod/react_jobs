@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*  Styling The whole form */
+.whole-input-box {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(206, 195, 195);
+  text-align: center;
+  font-size: 17px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  height: 30rem;
+  width: 25rem;
+}
+
+/* Styling STANDRD AND METRICS butoons */
+.standard-metrics,
+.standard-real {
+  padding: 1%;
+  margin: 0;
+  background-color: rgb(179, 114, 114);
+  position: absolute;
+  font-weight: bold;
+  height: 2rem;
+  width: 50%;
+  border: none;
+}
+
+/* Position of METRICS */
+.standard-real {
+  left: 0;
+}
+
+/* active class betwn METRICS and STARNDARD */
+.active {
+  background-color: rgb(206, 195, 195);
+}
+
+/* input centering texts */
+.measurements {
+  text-align: center;
+}
+
+input,
+.BMIoutput {
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.compute-btn {
+  position: inherit;
+  top: 38%;
+  left: 35%;
+  height: 25px;
+  padding: 1%;
+  font-weight: bold;
+}
+
+/* un-acceptable BMI output  */
+.notPositive {
+  color: red;
+}

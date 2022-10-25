@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="whole-input-box">
+      <div class="standards">
+        <button class="standard-real active">STANDARD</button>
+        <button class="standard-metrics">METRICS</button>
+      </div>
+      <br /><br /><br />
+
+      <form action="submit">
+        <aside class="input-measurement">
+          Your height:
+          <input
+            type="text"
+            value="5"
+            autofocus
+            class="measurements height-feet"
+          />
+          <i id="height-unit1"> (feet)</i>
+          <i id="height-unit2">
+            <input type="text" value="10" class="measurements height-inches" />
+            (inches)
+          </i>
+          <br />
+
+          <br /><br />
+          Your weight:
+          <input type="text" value="160" class="measurements weight" />
+          <i id="weight-unit"> (pound)</i>
+        </aside>
+        <br /><br />
+
+        <p class="notPositive"></p>
+
+        <button class="compute-btn">Compute BMI</button>
+        <br /><br /><br />
+
+        Your BMI in (kg/m2 ) <br />
+        <button class="BMIoutput"></button> <br /><br /><br />
+
+        <b>BMI Categories : </b><br />
+        UnderWeight = < 18.5 <br />
+        Normal weight = 18.5 - 24.9 <br />
+        Overweight = 25 - 29.9 <br />
+        Obesity = BMI of 30 or greater <br />
+      </form>
+    </div>
+  </body>
+</html>
