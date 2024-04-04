@@ -1,40 +1,9 @@
-// import React, { useState, useEffect } from "react";
-// import { useParams } from "react-router-dom";
-// import Spinner from "../components/ClipLoader";
-
-// const JobPage = () => {
-//   const { id } = useParams();
-//   const [job, setJob] = useState(null);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     const fetchJobs = async () => {
-//       try {
-//         const res = await fetch(`/api/jobs/${id}`);
-//         const data = await res.json();
-//         setJob(data);
-//       } catch (error) {
-//         console.log(`Error fetching data ${error}`);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-//     fetchJobs();
-//     console.log(job);
-//   }, []);
-
-//   return loading ? <Spinner loading={loading} /> : <div>JobPage </div>;
-// };
-
-// export default JobPage;
-
 import { useParams, useLoaderData, Link } from "react-router-dom";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 
 const JobPage = () => {
   const { id } = useParams();
   const job = useLoaderData();
-  console.log(job);
 
   return (
     <>

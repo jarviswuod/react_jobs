@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "bbca",
+      "title": "InterMiami",
+      "type": "Full-time",
+      "location": "Nairobi, KEN",
+      "description": "Full stack role jst around the coner",
+      "salary": "under $50K",
+      "company": {
+        "name": "Jan briddhi foundation",
+        "description": "AN NGO DOING SOME COL Staff",
+        "contactEmail": "anngo@staff.com",
+        "contactPhone": "+254757464904"
+      }
     }
   ]
 }
