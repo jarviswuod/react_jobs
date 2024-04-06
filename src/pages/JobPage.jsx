@@ -21,7 +21,6 @@ const JobPage = ({ deleteJobFunc }) => {
 
   return (
     <>
-      {/* <!-- Go Back --> */}
       <section>
         <div className="container m-auto py-6 px-6">
           <Link
@@ -63,7 +62,6 @@ const JobPage = ({ deleteJobFunc }) => {
 
             {/* <!-- Sidebar --> */}
             <aside>
-              {/* <!-- Company Info --> */}
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-6">Company Info</h3>
 
