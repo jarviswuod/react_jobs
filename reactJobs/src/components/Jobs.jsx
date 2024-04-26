@@ -1,4 +1,5 @@
 import { jobs } from "../jobs.json";
+import Button from "./Button";
 import JobCard from "./JobCard";
 
 const Jobs = ({ homeActive }) => {
@@ -12,6 +13,11 @@ const Jobs = ({ homeActive }) => {
           <JobCard key={index} job={job} />
         ))}
       </ul>
+      {homeActive && (
+        <Button style="bg-blue-700">
+          <a href="/jobs">View all jobs</a>
+        </Button>
+      )}
     </div>
   );
 };
