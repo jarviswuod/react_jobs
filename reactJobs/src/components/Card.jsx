@@ -1,14 +1,5 @@
-import React from "react";
-
-const Card = ({ card }) => {
-  return (
-    <div className="bg-[tomato]">
-      <h1>{card.title}</h1>
-      <p>{card.content}</p>
-      <p>{card.comp_1}</p>
-      <p>{card.comp_2}</p>
-    </div>
-  );
+const Card = ({ children, style }) => {
+  return <div className={` ${style}`}>{children}</div>;
 };
 
 export default Card;
