@@ -1,9 +1,13 @@
 import React from "react";
+import Hero from "./components/Hero";
+import CardHolder from "./components/HomeCards";
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+      {/* <Hero data="Hello world!" moreData="Just a normal hero section" />
+      <Hero /> */}
+      <HomeCards />
     </div>
   );
 };
