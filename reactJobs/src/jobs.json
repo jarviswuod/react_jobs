@@ -85,17 +85,17 @@
       }
     },
     {
-      "id": "bbca",
-      "title": "InterMiami",
-      "type": "Full-time",
-      "location": "Nairobi, KEN",
-      "description": "Full stack role best in the market",
-      "salary": "under $50K",
+      "id": "7",
+      "title": "Front-End Engineer (React & Redux)",
+      "type": "Full-Time",
+      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
+      "location": "Portland, OR",
+      "salary": "$70K - $80K",
       "company": {
-        "name": "Jan briddhi foundation",
-        "description": "Full stack role best in the market, Deal like no other",
-        "contactEmail": "anngo@staff.com",
-        "contactPhone": "+254757464904"
+        "name": "Alpha Elite",
+        "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
+        "contactEmail": "contact@adipisicingelit.com",
+        "contactPhone": "123-222-42345"
       }
     }
   ]
