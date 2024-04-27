@@ -13,7 +13,7 @@ const JobCard = ({ job }) => {
       <p>{job.type}</p>
       {description}
       <button onClick={() => setJobFullDesc((prev) => !prev)}>
-        {jobFullDesc ? "less" : "More"}
+        {jobFullDesc ? "Less" : "More"}
       </button>
       <p>{job.salary}</p>
       <a href={`/jobs/${job.id}`}>
