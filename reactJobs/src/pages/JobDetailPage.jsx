@@ -4,6 +4,9 @@ const JobDetailPage = () => {
   return (
     <div>
       <p>JobDetailPage</p>
+      <p>JobDetailPage</p>
+      <p>JobDetailPage</p>
+      <p>JobDetailPage</p>
     </div>
   );
 };

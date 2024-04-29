@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const HomeCards = () => {
   return (
@@ -9,13 +10,17 @@ const HomeCards = () => {
         <Card style="bg-gray-100">
           <h2>For Developers</h2>
           <p>Browse our React jobs ans start your career today</p>
-          <Button style="bg-black"> Browse Jobs</Button>
+          <Button style="bg-black">
+            <Link to="/jobs">Browse Jobs</Link>
+          </Button>
         </Card>
 
         <Card style="bg-indigo-100">
           <h2>For Employers</h2>
           <p>List your job to find the perfect developer for the role</p>
-          <Button style="bg-blue-700">Add Job</Button>
+          <Button style="bg-blue-700">
+            <Link to="/add-job">Add Job</Link>
+          </Button>
         </Card>
       </div>
     </section>

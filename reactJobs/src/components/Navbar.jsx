@@ -1,23 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="bg-blue-600">
       <div className="flex items-center justify-between gap-8 py-5 px-12 text-2xl border-b-2">
-        <a href="/">
+        <Link to="/">
           <img className="w-12 rounded-full" src="./reactimg.png" alt="img" />
-        </a>
+        </Link>
 
         <nav>
           <ul className="flex items-center justify-between gap-8">
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/jobs">Job</a>
+              <Link to="/jobs">Job</Link>
             </li>
             <li>
-              <a href="/add-job">Add Job</a>
+              <Link to="/add-job">Add Job</Link>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const JobCard = ({ job }) => {
   const [jobFullDesc, setJobFullDesc] = useState(false);
@@ -16,9 +17,9 @@ const JobCard = ({ job }) => {
         {jobFullDesc ? "Less" : "More"}
       </button>
       <p>{job.salary}</p>
-      <a href={`/jobs/${job.id}`}>
+      <Link to={`/jobs/${job.id}`}>
         <Button style="bg-blue-700">Read More</Button>
-      </a>
+      </Link>
     </li>
   );
 };

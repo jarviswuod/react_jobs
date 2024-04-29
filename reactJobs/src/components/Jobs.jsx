@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { jobs } from "../jobs.json";
 import Button from "./Button";
 import JobCard from "./JobCard";
@@ -15,7 +16,7 @@ const Jobs = ({ homeActive }) => {
       </ul>
       {homeActive && (
         <Button style="bg-blue-700">
-          <a href="/jobs">View all jobs</a>
+          <Link to="/jobs">View all jobs</Link>
         </Button>
       )}
     </div>
