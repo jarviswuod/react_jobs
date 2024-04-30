@@ -13,7 +13,9 @@ const Jobs = ({ homeActive }) => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
+        // const res = await fetch("https:localhost:6000/jobs");
         const res = await fetch("http://localhost:6000/jobs");
+
         const data = await res.json();
         console.log(res);
         console.log(data);
