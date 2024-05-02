@@ -18,6 +18,7 @@ const JobDetailPage = ({ deleteJobFunc }) => {
     <>
       <p>{job.title}</p>
       <p>{job.type}</p>
+      <p>{job.salary}</p>
       <p>{job.description}</p>
 
       <p>

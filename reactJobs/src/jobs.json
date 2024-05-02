@@ -100,72 +100,30 @@
     },
     {
       "id": "72bb",
-      "title": "title",
-      "description": "anther descrpt",
-      "type": "Full-time",
-      "salary": "under $50k",
+      "title": "Another remote job",
+      "type": "Remote",
+      "description": "We are looking for an experienced Frontend Developer with a strong background in React.js to join our team at Nathan Digital. The ideal candidate will have a minimum of three years of hands-on experience in frontend development, with a focus on building dynamic and intuitive user interfaces using React.js. As a Frontend Developer, you will collaborate closely with our design and development teams to deliver high-quality digital solutions that meet our clients' needs and exceed their expectations.",
+      "salary": "$150K - 175K",
       "location": "Seychelles",
       "company": {
         "name": "motor sport",
         "description": "motor sport",
-        "contactEmail": "jarvisochieng2018@gmail.com",
-        "contactPhone": "0757464904"
-      }
-    },
-    {
-      "id": "849c",
-      "title": "title",
-      "description": "anther descrpt",
-      "type": "Full-time",
-      "salary": "under $50k",
-      "location": "Seychelles",
-      "company": {
-        "name": "motor sport",
-        "description": "motor sport",
-        "contactEmail": "jarvisochieng2018@gmail.com",
-        "contactPhone": "0757464904"
-      }
-    },
-    {
-      "id": "c965",
-      "title": "title",
-      "description": "anther descrpt",
-      "type": "Full-time",
-      "salary": "under $50k",
-      "location": "Seychelles",
-      "company": {
-        "name": "motor sport",
-        "description": "motor sport",
-        "contactEmail": "jarvisochieng2018@gmail.com",
-        "contactPhone": "0757464904"
-      }
-    },
-    {
-      "id": "b35d",
-      "title": "title",
-      "description": "anther descrpt",
-      "type": "Full-time",
-      "salary": "under $50k",
-      "location": "Seychelles",
-      "company": {
-        "name": "motor sport",
-        "description": "motor sport",
-        "contactEmail": "jarvisochieng2018@gmail.com",
-        "contactPhone": "0757464904"
+        "contactPhone": "0757464904",
+        "contactEmail": "jarvisochieng2018@gmail.com"
       }
     },
     {
       "id": "0d1d",
-      "title": "just anoher headr",
+      "title": "150k mp kitch",
+      "type": "Remote",
       "description": "nonthr",
-      "type": "Full-time",
-      "salary": "under $50k",
+      "salary": "$70K - 80K",
       "location": "Seychelles",
       "company": {
         "name": "motor sport",
         "description": "motor sport",
-        "contactEmail": "jarvisochieng2018@gmail.com",
-        "contactPhone": "0757464904"
+        "contactPhone": "0757464904",
+        "contactEmail": "jarvisochieng2018@gmail.com"
       }
     }
   ]
