@@ -17,6 +17,7 @@ const AddJobPage = ({ addJobSubmit }) => {
 
   const submitForm = (e) => {
     e.preventDefault();
+
     const newJob = {
       title,
       description,
@@ -30,6 +31,7 @@ const AddJobPage = ({ addJobSubmit }) => {
         contactPhone,
       },
     };
+
     addJobSubmit(newJob);
     return navigate("/jobs");
   };

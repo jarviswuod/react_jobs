@@ -1,14 +1,29 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 
-const JobDetailPage = () => {
+const JobDetailPage = ({ deleteJobFunc }) => {
   const job = useLoaderData();
+  const navigate = useNavigate();
+
+  const onDeleteClick = (jodId) => {
+    const confirm = window.confirm(
+      "Are you sure you want to delete the listing?"
+    );
+
+    if (!confirm) return;
+    deleteJobFunc(jodId);
+    navigate("/jobs");
+  };
 
   return (
     <>
       <p>{job.title}</p>
       <p>{job.type}</p>
       <p>{job.description}</p>
-      <Link to={`/jobs/edit/${job.id}`}>Edit Job</Link>
+
+      <p>
+        <Link to={`/jobs/edit/${job.id}`}>Edit Job</Link>
+      </p>
+      <button onClick={() => onDeleteClick(job.id)}>Delete</button>
     </>
   );
 };
