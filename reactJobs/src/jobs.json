@@ -99,31 +99,17 @@
       }
     },
     {
-      "id": "72bb",
-      "title": "Another remote job",
+      "id": "d911",
+      "title": "React & Typescript dev",
       "type": "Remote",
       "description": "We are looking for an experienced Frontend Developer with a strong background in React.js to join our team at Nathan Digital. The ideal candidate will have a minimum of three years of hands-on experience in frontend development, with a focus on building dynamic and intuitive user interfaces using React.js. As a Frontend Developer, you will collaborate closely with our design and development teams to deliver high-quality digital solutions that meet our clients' needs and exceed their expectations.",
-      "salary": "$150K - 175K",
+      "salary": "$50K - 60K",
       "location": "Seychelles",
       "company": {
-        "name": "motor sport",
-        "description": "motor sport",
+        "name": "motor sport BMW X6",
+        "description": "With a focus on building dynamic and intuitive user interfaces using React.js. As a Frontend Developer, you sign and development teams to deliver high-quality ",
         "contactPhone": "0757464904",
-        "contactEmail": "jarvisochieng2018@gmail.com"
-      }
-    },
-    {
-      "id": "0d1d",
-      "title": "150k mp kitch",
-      "type": "Remote",
-      "description": "nonthr",
-      "salary": "$70K - 80K",
-      "location": "Seychelles",
-      "company": {
-        "name": "motor sport",
-        "description": "motor sport",
-        "contactPhone": "0757464904",
-        "contactEmail": "jarvisochieng2018@gmail.com"
+        "contactEmail": "jarvisomail.com"
       }
     }
   ]
