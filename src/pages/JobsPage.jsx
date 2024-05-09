@@ -1,12 +1,7 @@
-import React from "react";
+import JobsSection from "../components/JobsSection";
 
 const JobsPage = () => {
-  return (
-    <div>
-      <p>JobsPage</p>
-      <p>JobsPage</p>
-    </div>
-  );
+  return <JobsSection isHome={false} />;
 };
 
 export default JobsPage;
