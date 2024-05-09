@@ -3,7 +3,7 @@ import Button from "./Button";
 import { useState } from "react";
 
 const JobsList = ({ job }) => {
-  const [showLongDescription, setShowLongDescription] = useState(false);
+  const [showLongDescription, setShowLongDescription] = useState(true);
   const descriptionText = showLongDescription
     ? job.description.slice(0, 90) + " ..."
     : job.description;
