@@ -1,9 +1,10 @@
 import React from "react";
+import HomeCards from "../components/HomeCards";
 
 const HomePage = () => {
   return (
     <div>
-      <p>HomePage</p>
+      <HomeCards />
       <p>HomePage</p>
     </div>
   );
