@@ -1,24 +1,29 @@
-import React, { useState } from "react";
-import Button from "../components/Button";
-import { useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
+import Button from "./components/Button";
+import { useState } from "react";
 
-const AddJobPage = ({ addJobFunc }) => {
+const EditJobDetails = ({ jobUpdatefunc }) => {
   const navigate = useNavigate();
+  const { id } = useParams();
+  const job = useLoaderData();
 
-  const [title, setTitle] = useState("");
-  const [type, setType] = useState("Full time");
-  const [description, setDescription] = useState("");
-  const [location, setLocation] = useState("");
-  const [salary, setSalary] = useState("Under $50K");
-  const [contactEmail, setContactEmail] = useState("");
-  const [contactPhone, setContactPhone] = useState("");
-  const [companyName, setCompanyName] = useState("");
-  const [companyDescription, setCompanyDescription] = useState("");
+  const [title, setTitle] = useState(job.title);
+  const [type, setType] = useState(job.type);
+  const [description, setDescription] = useState(job.description);
+  const [location, setLocation] = useState(job.location);
+  const [salary, setSalary] = useState(job.salary);
+  const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
+  const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
+  const [companyName, setCompanyName] = useState(job.company.name);
+  const [companyDescription, setCompanyDescription] = useState(
+    job.company.description
+  );
 
-  const submitForm = (e) => {
+  const formSubmit = (e) => {
     e.preventDefault();
 
-    const addedJob = {
+    const updatedjobForm = {
+      id,
       title,
       type,
       description,
@@ -31,19 +36,24 @@ const AddJobPage = ({ addJobFunc }) => {
         description: companyDescription,
       },
     };
-    addJobFunc(addedJob);
+
+    jobUpdatefunc(updatedjobForm);
     return navigate("/jobs");
   };
 
   return (
     <section>
       <div>
-        <form method="post" onSubmit={submitForm} className="flex flex-col">
+        <form
+          onSubmit={formSubmit}
+          method="post"
+          className="flex flex-col gap-4"
+        >
           <label htmlFor="title">
             Title
             <input
-              type="text"
               required
+              type="text"
               name="title"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
@@ -52,8 +62,8 @@ const AddJobPage = ({ addJobFunc }) => {
           <label htmlFor="type">
             Type
             <input
-              type="text"
               required
+              type="text"
               name="type"
               onChange={(e) => setType(e.target.value)}
               value={type}
@@ -62,8 +72,8 @@ const AddJobPage = ({ addJobFunc }) => {
           <label htmlFor="description">
             Description
             <input
-              type="text"
               required
+              type="text"
               name="description"
               onChange={(e) => setDescription(e.target.value)}
               value={description}
@@ -72,8 +82,8 @@ const AddJobPage = ({ addJobFunc }) => {
           <label htmlFor="location">
             Location
             <input
-              type="text"
               required
+              type="text"
               name="location"
               onChange={(e) => setLocation(e.target.value)}
               value={location}
@@ -82,58 +92,59 @@ const AddJobPage = ({ addJobFunc }) => {
           <label htmlFor="salary">
             Salary
             <input
-              type="text"
               required
+              type="text"
               name="salary"
               onChange={(e) => setSalary(e.target.value)}
               value={salary}
             />
           </label>
-          <label htmlFor="companyName">
-            CompanyName
+          <label htmlFor="name">
+            Company Name
             <input
-              type="text"
               required
-              name="companyName"
-              onChange={(e) => setCompanyName(e.target.value)}
-              value={companyName}
+              type="text"
+              name="name"
+              onChange={(e) => setContactEmail(e.target.value)}
+              value={contactEmail}
             />
           </label>
-          <label htmlFor="companyDescription">
-            CompanyDescription
+          <label htmlFor="description">
+            Company Description
             <input
-              type="text"
               required
-              name="companyDescription"
-              onChange={(e) => setCompanyDescription(e.target.value)}
-              value={companyDescription}
-            />
-          </label>
-          <label htmlFor="contactPhone">
-            ContactPhone
-            <input
               type="text"
-              required
-              name="contactPhone"
+              name="description"
               onChange={(e) => setContactPhone(e.target.value)}
               value={contactPhone}
             />
           </label>
           <label htmlFor="contactEmail">
-            ContactEmail
+            Company ContactEmail
             <input
-              type="text"
               required
+              type="text"
               name="contactEmail"
-              onChange={(e) => setContactEmail(e.target.value)}
-              value={contactEmail}
+              onChange={(e) => setCompanyName(e.target.value)}
+              value={companyName}
             />
           </label>
-          <Button>Save job</Button>
+          <label htmlFor="contactPhone">
+            Company ContactPhone
+            <input
+              required
+              type="text"
+              name="contactPhone"
+              onChange={(e) => setCompanyDescription(e.target.value)}
+              value={companyDescription}
+            />
+          </label>
+
+          <Button>Save</Button>
         </form>
       </div>
     </section>
   );
 };
 
-export default AddJobPage;
+export default EditJobDetails;

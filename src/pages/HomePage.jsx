@@ -1,18 +1,13 @@
 import React from "react";
-
-import Hero from "../components/Hero";
 import HomeCards from "../components/HomeCards";
-import JobListings from "../components/JobListings";
-import ViewAllJobs from "../components/ViewAllJobs";
+import JobsSection from "../components/JobsSection";
 
 const HomePage = () => {
   return (
-    <>
-      <Hero />
+    <div>
       <HomeCards />
-      <JobListings isHome={true} />
-      <ViewAllJobs />
-    </>
+      <JobsSection isHome={true} />
+    </div>
   );
 };
 

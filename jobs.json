@@ -88,14 +88,14 @@
       "id": "bbca",
       "title": "InterMiami",
       "type": "Full-time",
-      "location": "Nairobi, KEN",
       "description": "Full stack role best in the market",
-      "salary": "under $50K",
+      "location": "Kampala, UG",
+      "salary": "Over $200K",
       "company": {
+        "contactEmail": "mango@staff.co.ke",
+        "contactPhone": "+254757464904",
         "name": "Jan briddhi foundation",
-        "description": "Full stack role best in the market, Deal like no other",
-        "contactEmail": "anngo@staff.com",
-        "contactPhone": "+254757464904"
+        "description": "Full stack role best in the market, Deal like no other"
       }
     }
   ]
