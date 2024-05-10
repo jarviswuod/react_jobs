@@ -13,9 +13,15 @@ import JobDetailsPage, { jobLoader } from "./pages/JobDetailsPage";
 import EditJobDetails from "./EditJobDetails";
 
 const App = () => {
-  const updatejob = (job) => {
-    console.log(job);
+  const updatejob = async (job) => {
+    const res = await fetch(`/api/jobs/${job.id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "appliaion/json" },
+      body: JSON.stringify(job),
+    });
+    return;
   };
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>

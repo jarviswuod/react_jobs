@@ -2,7 +2,6 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import Button from "../components/Button";
 
 const JobDetailsPage = () => {
-  const { id } = useParams();
   const job = useLoaderData();
 
   return (

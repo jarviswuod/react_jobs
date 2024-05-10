@@ -1,10 +1,10 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Button from "./components/Button";
 import { useState } from "react";
 
 const EditJobDetails = ({ jobUpdatefunc }) => {
+  const { id } = useParams();
   const job = useLoaderData();
-  console.log(job);
 
   const [title, setTitle] = useState(job.title);
   const [type, setType] = useState(job.type);
@@ -22,6 +22,7 @@ const EditJobDetails = ({ jobUpdatefunc }) => {
     e.preventDefault();
 
     const updatedjobForm = {
+      id,
       title,
       type,
       description,
