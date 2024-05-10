@@ -1,8 +1,9 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import Button from "./components/Button";
 import { useState } from "react";
 
 const EditJobDetails = ({ jobUpdatefunc }) => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const job = useLoaderData();
 
@@ -35,7 +36,9 @@ const EditJobDetails = ({ jobUpdatefunc }) => {
         description: companyDescription,
       },
     };
+
     jobUpdatefunc(updatedjobForm);
+    return navigate("/jobs");
   };
 
   return (
