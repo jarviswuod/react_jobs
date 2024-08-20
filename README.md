@@ -16,34 +16,12 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone git@github.com:jarvisthedev/react_jobs.git
+``
 ```
 
-**Navigating to the project**
-
-```bash
-cd react_jobs
+**
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-**Running the Server (In a different CLI)**
-
-```bash
-npm run server
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+**) in your browser to view the project.
 
 Open [http://localhost:8000/jobs](http://localhost:8000/jobs) in your browser to view the server running.
